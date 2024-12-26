@@ -1,0 +1,37 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+import java.io.PrintStream;
+
+public class Main {
+    public Main() {
+    }
+
+    public static void main(String[] args) {
+        Profile profile1 = new Profile("Asylkhan Kozhanov", "Hello, I am Asylkhan!");
+        Profile profile2 = new Profile("Bauyrzhan Aliev", "Hello, I am Bauyrzhan!");
+        Profile profile3 = new Profile("Asylkhan Kozhanov", "Another bio");
+        Post post1 = new Post("This is my first post!", "Asylkhan Kozhanov");
+        Post post2 = new Post("This is my second post!", "Asylkhan Kozhanov");
+        Post post3 = new Post("Another post by Bauyrzhan", "Bauyrzhan Aliev");
+        profile1.displayProfile();
+        profile2.displayProfile();
+        post1.displayPost();
+        post2.displayPost();
+        post3.displayPost();
+        PrintStream var10000 = System.out;
+        boolean var10001 = profile1.hasSameUsername(profile2);
+        var10000.println("Are profile1 and profile2 the same user? " + var10001);
+        var10000 = System.out;
+        var10001 = profile1.hasSameUsername(profile3);
+        var10000.println("Are profile1 and profile3 the same user? " + var10001);
+        var10000 = System.out;
+        var10001 = post1.isSameAuthor(post2);
+        var10000.println("Do post1 and post2 have the same author? " + var10001);
+        var10000 = System.out;
+        var10001 = post1.isSameAuthor(post3);
+        var10000.println("Do post1 and post3 have the same author? " + var10001);
+    }
+}
