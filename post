@@ -1,0 +1,38 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+class Post {
+    private String content;
+    private String author;
+
+    public Post(String content, String author) {
+        this.content = content;
+        this.author = author;
+    }
+
+    public String getContent() {
+        return this.content;
+    }
+
+    public String getAuthor() {
+        return this.author;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void displayPost() {
+        System.out.println(this.author + " says: " + this.content);
+    }
+
+    public boolean isSameAuthor(Post otherPost) {
+        return this.author.equals(otherPost.author);
+    }
+}
